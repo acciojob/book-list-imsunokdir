@@ -1,8 +1,4 @@
 //your JS code here. If required.
-
-
-
-
 function addBook(event) {
 	event.preventDefault()
     
@@ -33,18 +29,13 @@ const tableRows = document.querySelectorAll('tr');
 
 // Loop through each row
 tableRows.forEach(row => {
-  // Find all delete TDs within the row
   const deleteTDs = row.querySelectorAll('td.delete');
-
-  // Add click event listener to each delete TD
   deleteTDs.forEach(deleteTD => {
     deleteTD.addEventListener('click', () => {
-      // Remove the entire table row (parent of the clicked TD)
       row.remove();
     });
   });
 });
-
 }
 
 
