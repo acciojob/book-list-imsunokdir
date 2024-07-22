@@ -1,1 +1,20 @@
 /*  your css code here. If applicable */
+h1{
+	text-align:center;
+}
+input{
+	width:90%
+}
+table{
+	width:100%;
+	table-layout: fixed;
+	border:none;
+	border-spacing:0;
+}
+
+td{
+	background-color:yellow;
+	text-align:center;
+	padding:7px;
+	border-top:3px solid;
+}
