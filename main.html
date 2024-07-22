@@ -10,7 +10,7 @@
 	<!-- the entire body must be written by student -->
 	<h1>My<span>Book</span>List</h1>
 
-	<form id="book-form" onsubmit="addBook(event)">
+	<form id="form-group" onsubmit="addBook(event)">
 		<label for="title">Title</label>
 		<br>
 		<input type="text" id="title" name="title">
@@ -23,13 +23,13 @@
 		<br>
 		<input type="text" id="isbn" name="isbn">
 		<br>
-		<button type="submit">Add Book</button>
+		<button type="submit" id="submit">Add Book</button>
 	</form>
 
-	<table>
+	<table id="table-striped">
 		<thead>
 			<tr>
-			<th>Title</th>
+			<th id="book-list">Title</th>
 			<th>Author</th>
 			<th>ISBN#</th>
 				</tr>
