@@ -18,3 +18,14 @@ td{
 	padding:7px;
 	border-top:3px solid;
 }
+
+.delete{
+	background-color:red;
+	width:50px;
+	color:white;
+	border-radius:10px;
+}
+
+.delete:hover{
+	cursor:pointer;
+}
