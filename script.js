@@ -19,7 +19,7 @@ function addBook(event) {
 	let newTd = document.createElement("td");
 	newTd.textContent = "X";
 	// newTd.classList.add("delete");
-	newTd.className += ' delete';
+	newTd.className += 'delete';
 	newTr.appendChild(newTd);
 	tbody.appendChild(newTr);
 	document.getElementById("title").value=""
