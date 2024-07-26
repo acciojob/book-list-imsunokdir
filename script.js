@@ -20,6 +20,7 @@ function addBook(event) {
 	newTd.textContent = "X";
 	// newTd.classList.add("delete");
 	newTd.classList.add('delete');
+	newTd.id="delete";
 	newTr.appendChild(newTd);
 
 	tbody.appendChild(newTr);
