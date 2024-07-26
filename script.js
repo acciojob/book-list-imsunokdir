@@ -21,10 +21,8 @@ function addBook(event) {
 	// newTd.classList.add("delete");
 	newTd.classList.add('delete');
 	newTr.appendChild(newTd);
-	setTimeout(() => {
-    tbody.appendChild(newTr);
-}, 100);
-	// tbody.appendChild(newTr);
+
+	tbody.appendChild(newTr);
 	document.getElementById("title").value=""
 	document.getElementById("author").value=""
 	document.getElementById("isbn").value=""
@@ -44,7 +42,10 @@ const tableRows = document.querySelectorAll('tr');
 
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains('delete') && e.target.tagName === 'TD') {
-        e.target.closest('tr').remove();
+        // e.target.closest('tr').remove();
+		setTimeout(() => {
+    e.target.closest('tr').remove();
+}, 100);
     }
 });
 
