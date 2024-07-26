@@ -29,15 +29,21 @@ function addBook(event) {
 const tableRows = document.querySelectorAll('tr');
 
 // Loop through each row
-tableRows.forEach(row => {
-  const deleteTDs = row.querySelectorAll('td.delete');
-  deleteTDs.forEach(deleteTD => {
-    deleteTD.addEventListener('click', () => {
-      row.remove();
-    });
-  });
-});
+// tableRows.forEach(row => {
+//   const deleteTDs = row.querySelectorAll('td.delete');
+//   deleteTDs.forEach(deleteTD => {
+//     deleteTD.addEventListener('click', () => {
+//       row.remove();
+//     });
+//   });
+// });
 }
+
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('delete') && e.target.tagName === 'TD') {
+        e.target.closest('tr').remove();
+    }
+});
 
 
 
