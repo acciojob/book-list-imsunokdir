@@ -43,10 +43,7 @@ const tableRows = document.querySelectorAll('tr');
 
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains('delete') && e.target.tagName === 'TD') {
-        // e.target.closest('tr').remove();
-		setTimeout(() => {
-    e.target.closest('tr').remove();
-}, 100);
+        e.target.closest('tr').remove();
     }
 });
 
